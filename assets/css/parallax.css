@@ -1,0 +1,89 @@
+.parallax-image1, .parallax-image2, .parallax-image3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+#textwhite {
+  color: white !important;
+}
+
+.parallax-image1 {
+  background-image: url('../../assets/img/geckos_misc/ggbg.jpg');
+  min-height: 99vh;
+}
+
+.parallax-image2 {
+  background-size: cover;
+  background-image: url('../../assets/img/geckos_misc/gecko_sketch.jpg');
+  max-height: 50vh;
+}
+
+.parallax-image3 {
+  background-image: url('../../assets/img/geckos_misc/meeting.jpg.jpg');
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+#section1 {
+  height: auto;
+}
+
+.section-light {
+  /*background-color: #f4f4f4;*/
+  /*color: #666;*/
+}
+
+.btn {
+  border-radius: 30px 30px 30px 30px;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+  .parallax-image1, .parallax-image2, .parallax-image3 {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 600px) {
+  .ptext {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section.section-light {
+    padding: 50px 30px;
+  }
+}
+
